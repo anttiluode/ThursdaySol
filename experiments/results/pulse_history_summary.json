@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-29",
+  "experiment": "8: pulse history conditional response",
+  "model": "ThursdaySol experiments.continuous_adaptive (engineered, not original ECG membrane nor physical wave propagation)",
+  "protocol": {
+    "warm_ticks": 80,
+    "pulse_ticks": 4,
+    "gap_ticks": 8,
+    "final_hold": 8,
+    "pulse_size": 0.06,
+    "probe_size": 0.06,
+    "dim": 256,
+    "adapt": true,
+    "connected_during_transfer": true,
+    "diagnostic_one_step_cut_BC": true,
+    "diagnostic_C_output_reset": 0.6
+  },
+  "readout": "C_probe_increment=(probe-output - same-noise no-probe output) with C.current_output matched and no new B input during one-step diagnostic readout",
+  "independent_noise_heldout": {
+    "2bits_noise0.003_adaptive": {
+      "preparations_per_word": 80,
+      "train_per_word": 40,
+      "test_per_word": 40,
+      "chance_full_word": 0.25,
+      "bit_probe_increment": [
+        0.8125,
+        0.5625
+      ],
+      "full_word_probe_increment": 0.4,
+      "full_word_probe_output": 0.425,
+      "means_probe_increment": {
+        "--": 0.06996394434892836,
+        "-+": 0.06969445682742736,
+        "+-": 0.06557462777874594,
+        "++": 0.0646845648599367
+      }
+    },
+    "2bits_noise0.003_fixed": {
+      "preparations_per_word": 80,
+      "bit_probe_increment": [
+        0.80625,
+        0.55625
+      ],
+      "full_word_probe_increment": 0.4
+    },
+    "2bits_noise0.003_erase_B": {
+      "preparations_per_word": 80,
+      "bit_probe_increment": [
+        0.46875,
+        0.46875
+      ],
+      "full_word_probe_increment": 0.2375
+    },
+    "2bits_noise0.003_cut_BC": {
+      "preparations_per_word": 80,
+      "bit_probe_increment": [
+        0.46875,
+        0.46875
+      ],
+      "full_word_probe_increment": 0.2375
+    },
+    "2bits_noise0.003_erase_C": {
+      "preparations_per_word": 80,
+      "bit_probe_increment": [
+        0.43125,
+        0.46875
+      ],
+      "full_word_probe_increment": 0.23125
+    },
+    "2bits_noise0.003_latest_only": {
+      "preparations_per_word": 80,
+      "bit_probe_increment": [
+        0.475,
+        0.5625
+      ],
+      "full_word_probe_increment": 0.3
+    },
+    "2bits_noise0.03_adaptive": {
+      "preparations_per_word": 80,
+      "bit_probe_increment": [
+        0.45625,
+        0.45625
+      ],
+      "full_word_probe_increment": 0.23125
+    },
+    "3bits_noise0.003_adaptive": {
+      "preparations_per_word": 60,
+      "train_per_word": 30,
+      "test_per_word": 30,
+      "chance_full_word": 0.125,
+      "bit_probe_increment": [
+        0.8541666666666666,
+        0.5875,
+        0.5125
+      ],
+      "full_word_probe_increment": 0.2,
+      "full_word_probe_output": 0.2791666666666667
+    },
+    "3bits_noise0.003_fixed": {
+      "preparations_per_word": 60,
+      "bit_probe_increment": [
+        0.8625,
+        0.6041666666666666,
+        0.5041666666666667
+      ],
+      "full_word_probe_increment": 0.25
+    },
+    "3bits_noise0.003_erase_B": {
+      "preparations_per_word": 60,
+      "bit_probe_increment": [
+        0.5041666666666667,
+        0.49583333333333335,
+        0.5208333333333334
+      ],
+      "full_word_probe_increment": 0.14166666666666666
+    }
+  },
+  "paired_shared_noise": {
+    "noise0.003_adaptive_normal": {
+      "n_pairs": 120,
+      "histories": [
+        "-+",
+        "++"
+      ],
+      "identical_last_pulse": true,
+      "mean_delta_increment": -0.0051394514602413665,
+      "se": 0.00019854780256975014,
+      "approx_ci95": [
+        -0.005528605153278077,
+        -0.004750297767204656
+      ],
+      "negative_fraction": 0.975,
+      "mean_delta_baseline": 0.046709045280059355,
+      "mean_delta_C_memory": 0.2215314724460763
+    },
+    "noise0.003_fixed_normal": {
+      "n_pairs": 120,
+      "mean_delta_increment": -0.0038692944848903953,
+      "approx_ci95": [
+        -0.004117996558964494,
+        -0.0036205924108162965
+      ]
+    },
+    "noise0.03_adaptive_normal": {
+      "n_pairs": 120,
+      "mean_delta_increment": -0.0017128699292267907,
+      "approx_ci95": [
+        -0.002292004806320588,
+        -0.0011337350521329935
+      ],
+      "negative_fraction": 0.6583333333333333
+    },
+    "noise0.03_fixed_normal": {
+      "n_pairs": 120,
+      "mean_delta_increment": -0.0014921788473765628,
+      "approx_ci95": [
+        -0.0019596853103544982,
+        -0.0010246723843986274
+      ]
+    },
+    "cut_BC_erase_B_erase_C_latest_only_no_probe": {
+      "n_pairs_per_control": 120,
+      "mean_delta_increment": 0,
+      "scope": "exact zero in matched-noise twins, both noise SD .003 and .03"
+    }
+  },
+  "interpretation": "Causally history-dependent local response in an engineered scalar leaky-memory chain; the early bit dominates, recent bits poorly decoded, multi-bit memory limited, no reliable decoding at noise .03. Local gain adaptation is not necessary."
+}
