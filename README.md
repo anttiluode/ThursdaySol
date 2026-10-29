@@ -56,3 +56,15 @@ The 1024-D experiment is an important observer control: the first four spatial s
 This supplies one constrained *yes*: in a deliberately coupled digital feedback system, B's previously received inputs can affect C's response to a later identical probe, when all immediately visible states have been matched. It supplies a stronger *no* for the current parameters: this effect is fragile and not robust to modest input noise.
 
 **Next gate:** replace the fragile variance switch with an independently measured, locally bounded slow state; require held-out cross-preparation reliability and distinguish useful sensitivity from spontaneous history-driven divergence. Only after that compare it with phase-memory chains.
+
+
+## Experiment 6: local slow-state relay (separate engineered model)
+
+The original ECG-variance assay above remains unchanged and its negative noise result still stands. The next experiment adds a **new bounded leaky state law** and an explicit geometry-sensitive receiver gate to ask whether A→B→C transfer can become robust after those mechanisms are supplied. This is a constructive engineering experiment, not emergent neuronal physics.
+
+[Read the protocol, held-out tests, controls, results and limitations](experiments/RESULTS.md). Source: [experiments/slow_state_relay.py](experiments/slow_state_relay.py); tests: [experiments/test_slow_state_relay.py](experiments/test_slow_state_relay.py).
+
+~~~bash
+python -m experiments.slow_state_relay
+python -m pytest -q test_three_loop.py experiments/test_slow_state_relay.py
+~~~
