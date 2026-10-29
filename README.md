@@ -1,5 +1,7 @@
 # Three-loop state-transfer assay from the original Perception Lab ECG graph
 
+![pic](robustness.png)
+
 **Experiment 5 · 2026-10-29**
 
 Independent, headless reconstruction of `anttiluode/GeometricNeuronOriginReview`'s `ecg.json`. It runs **three separate** `HomeostaticCoupler → Checkerboard → ImageToVector → four samples → HomeostaticCoupler` loops, with independent 200-step input histories and 50-step variance windows.
