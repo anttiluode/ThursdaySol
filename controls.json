@@ -1,0 +1,592 @@
+{
+  "no_A_write": {
+    "input": {
+      "initial": 0.6,
+      "pulse_amp": 0.0,
+      "warm": 140,
+      "duration": 12,
+      "hold": 8,
+      "probe": 0.15,
+      "steps": 80,
+      "dim": 256,
+      "gain": 0.2,
+      "noise": 0.0,
+      "seed": 42
+    },
+    "at_checkpoint": {
+      "B_variance_sham": 0.13921768259351172,
+      "B_variance_written": 0.13921768259351172,
+      "B_current_output_sham": 0.816155715879329,
+      "B_current_output_written": 0.816155715879329,
+      "B_history_l2": 0.0,
+      "C_current_output_sham": 0.8603801630491443,
+      "C_current_output_written": 0.8603801630491443
+    },
+    "natural": {
+      "B_peak_delta": 0.0,
+      "C_peak_delta": 0.0,
+      "C_rms_delta": 0.0
+    },
+    "memory_graft": {
+      "B_peak_delta": 0.0,
+      "C_peak_delta": 0.0,
+      "C_rms_delta": 0.0,
+      "C_no_BC_peak_delta": 0.0,
+      "C_no_probe_peak_delta": 0.0,
+      "C_probe_interaction_peak": 0.0,
+      "C_probe_interaction_rms": 0.0,
+      "B_probe_interaction_peak": 0.0,
+      "B_first_delta": 0.0,
+      "C_first_delta": 0.0,
+      "C_last_delta": 0.0
+    }
+  },
+  "long_hold_30": {
+    "input": {
+      "initial": 0.6,
+      "pulse_amp": 0.5,
+      "warm": 140,
+      "duration": 12,
+      "hold": 30,
+      "probe": 0.15,
+      "steps": 80,
+      "dim": 256,
+      "gain": 0.2,
+      "noise": 0.0,
+      "seed": 42
+    },
+    "at_checkpoint": {
+      "B_variance_sham": 0.1524262538499657,
+      "B_variance_written": 0.14096292344953926,
+      "B_current_output_sham": 0.816155715879329,
+      "B_current_output_written": 0.816155715879329,
+      "B_history_l2": 0.15796215988236673,
+      "C_current_output_sham": 0.8150682383572654,
+      "C_current_output_written": 0.8150682383572654
+    },
+    "natural": {
+      "B_peak_delta": 2.789494453203645e-07,
+      "C_peak_delta": 1.282137769287317e-07,
+      "C_rms_delta": 1.5343809060919057e-08
+    },
+    "memory_graft": {
+      "B_peak_delta": 2.894329047542499e-07,
+      "C_peak_delta": 3.9025784825952314e-08,
+      "C_rms_delta": 4.3632153873054584e-09,
+      "C_no_BC_peak_delta": 0.0,
+      "C_no_probe_peak_delta": 3.76433501036999e-08,
+      "C_probe_interaction_peak": 1.3824347222524125e-09,
+      "C_probe_interaction_rms": 1.5456090067062178e-10,
+      "B_probe_interaction_peak": 1.04834594338854e-08,
+      "B_first_delta": 0.0,
+      "C_first_delta": 0.0,
+      "C_last_delta": 0.0
+    }
+  },
+  "long_hold_60": {
+    "input": {
+      "initial": 0.6,
+      "pulse_amp": 0.5,
+      "warm": 140,
+      "duration": 12,
+      "hold": 60,
+      "probe": 0.15,
+      "steps": 80,
+      "dim": 256,
+      "gain": 0.2,
+      "noise": 0.0,
+      "seed": 42
+    },
+    "at_checkpoint": {
+      "B_variance_sham": 0.15242625384996572,
+      "B_variance_written": 0.14047446621574824,
+      "B_current_output_sham": 0.816155715879329,
+      "B_current_output_written": 0.816155715879329,
+      "B_history_l2": 0.15796215988236673,
+      "C_current_output_sham": 0.8150682383572654,
+      "C_current_output_written": 0.8150682383572654
+    },
+    "natural": {
+      "B_peak_delta": 2.9433497727993085e-07,
+      "C_peak_delta": 1.3000761800441296e-07,
+      "C_rms_delta": 1.552780571968836e-08
+    },
+    "memory_graft": {
+      "B_peak_delta": 1.809164116295392e-07,
+      "C_peak_delta": 2.469308724162289e-08,
+      "C_rms_delta": 2.760771082330078e-09,
+      "C_no_BC_peak_delta": 0.0,
+      "C_no_probe_peak_delta": 3.966667128096901e-08,
+      "C_probe_interaction_peak": 1.4973584039346122e-08,
+      "C_probe_interaction_rms": 1.6740975889391908e-09,
+      "B_probe_interaction_peak": 1.1341856565039166e-07,
+      "B_first_delta": 0.0,
+      "C_first_delta": 0.0,
+      "C_last_delta": 0.0
+    }
+  },
+  "observer_1024": {
+    "input": {
+      "initial": 0.6,
+      "pulse_amp": 0.5,
+      "warm": 140,
+      "duration": 12,
+      "hold": 8,
+      "probe": 0.15,
+      "steps": 80,
+      "dim": 1024,
+      "gain": 0.2,
+      "noise": 0.0,
+      "seed": 42
+    },
+    "at_checkpoint": {
+      "B_variance_sham": 0.26700340521346494,
+      "B_variance_written": 0.2970262432569174,
+      "B_current_output_sham": 0.804781566301051,
+      "B_current_output_written": 0.804781566301051,
+      "B_history_l2": 0.4085807224270178,
+      "C_current_output_sham": 0.8054757478677939,
+      "C_current_output_written": 0.8054757478677939
+    },
+    "natural": {
+      "B_peak_delta": 0.0,
+      "C_peak_delta": 0.0,
+      "C_rms_delta": 0.0
+    },
+    "memory_graft": {
+      "B_peak_delta": 0.0,
+      "C_peak_delta": 0.0,
+      "C_rms_delta": 0.0,
+      "C_no_BC_peak_delta": 0.0,
+      "C_no_probe_peak_delta": 0.0,
+      "C_probe_interaction_peak": 0.0,
+      "C_probe_interaction_rms": 0.0,
+      "B_probe_interaction_peak": 0.0,
+      "B_first_delta": 0.0,
+      "C_first_delta": 0.0,
+      "C_last_delta": 0.0
+    }
+  },
+  "observer_2048": {
+    "input": {
+      "initial": 0.6,
+      "pulse_amp": 0.5,
+      "warm": 140,
+      "duration": 12,
+      "hold": 8,
+      "probe": 0.15,
+      "steps": 80,
+      "dim": 2048,
+      "gain": 0.2,
+      "noise": 0.0,
+      "seed": 42
+    },
+    "at_checkpoint": {
+      "B_variance_sham": 0.0661825922310566,
+      "B_variance_written": 0.06572323408552588,
+      "B_current_output_sham": -0.3394814573183206,
+      "B_current_output_written": -0.34017606351499863,
+      "B_history_l2": 0.13103838157545333,
+      "C_current_output_sham": -0.3395573708432761,
+      "C_current_output_written": -0.33961071225034534
+    },
+    "natural": {
+      "B_peak_delta": 0.02149051183767814,
+      "C_peak_delta": 0.0005290697023387914,
+      "C_rms_delta": 0.00010258251813595851
+    },
+    "memory_graft": {
+      "B_peak_delta": 0.002531792481514805,
+      "C_peak_delta": 4.5664508016463046e-05,
+      "C_rms_delta": 6.279268575550884e-06,
+      "C_no_BC_peak_delta": 0.0,
+      "C_no_probe_peak_delta": 2.1674380380587444e-05,
+      "C_probe_interaction_peak": 2.3990127635875602e-05,
+      "C_probe_interaction_rms": 3.1446493496110535e-06,
+      "B_probe_interaction_peak": 0.0012461102786291978,
+      "B_first_delta": 0.0,
+      "C_first_delta": 0.0,
+      "C_last_delta": 0.0
+    }
+  },
+  "paired_noise_0.003_seeds_1_to_8": [
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 1
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.14863295359768,
+        "B_variance_written": 0.1483572467084262,
+        "B_current_output_sham": 0.8472963374501902,
+        "B_current_output_written": 0.8456876704302347,
+        "B_history_l2": 0.04758461462477033,
+        "C_current_output_sham": 0.8454538222957743,
+        "C_current_output_written": 0.8455379273841318
+      },
+      "natural": {
+        "B_peak_delta": 0.00015502490590724172,
+        "C_peak_delta": 9.327425452121396e-05,
+        "C_rms_delta": 1.296610422058799e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.00017242757678004317,
+        "C_peak_delta": 1.0701688210823512e-05,
+        "C_rms_delta": 1.5017037560443306e-06,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 1.0460172862769568e-05,
+        "C_probe_interaction_peak": 6.217888341430999e-06,
+        "C_probe_interaction_rms": 7.430068145276488e-07,
+        "B_probe_interaction_peak": 0.00010018672484746194,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 2
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.1487871988206872,
+        "B_variance_written": 0.14836600440530118,
+        "B_current_output_sham": 0.8463751516247724,
+        "B_current_output_written": 0.8437844094700869,
+        "B_history_l2": 0.054775246360201285,
+        "C_current_output_sham": 0.8458006690370071,
+        "C_current_output_written": 0.8459181492098593
+      },
+      "natural": {
+        "B_peak_delta": 0.0006693723414719077,
+        "C_peak_delta": 0.0001506552626301394,
+        "C_rms_delta": 2.1010247180092336e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.000650143553323379,
+        "C_peak_delta": 4.0021776346210736e-05,
+        "C_rms_delta": 4.883057618059539e-06,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 3.3602009717470516e-05,
+        "C_probe_interaction_peak": 8.073540746611485e-06,
+        "C_probe_interaction_rms": 1.153259857257614e-06,
+        "B_probe_interaction_peak": 0.0001042942109710232,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 3
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.15067287299688878,
+        "B_variance_written": 0.1507867727644545,
+        "B_current_output_sham": 0.8146390931848805,
+        "B_current_output_written": 0.8125302752095026,
+        "B_history_l2": 0.04946251418258149,
+        "C_current_output_sham": 0.8465344423503778,
+        "C_current_output_written": 0.846599096182004
+      },
+      "natural": {
+        "B_peak_delta": 0.0011790433653455779,
+        "C_peak_delta": 0.00012555560708826796,
+        "C_rms_delta": 1.6236083970822945e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.00026121129382983277,
+        "C_peak_delta": 9.138247205275896e-06,
+        "C_rms_delta": 1.0217280759836799e-06,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 6.930667396920498e-05,
+        "C_probe_interaction_peak": 6.930667396920498e-05,
+        "C_probe_interaction_rms": 7.796787296666613e-06,
+        "B_probe_interaction_peak": 0.0011260536989340375,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 4
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.14434062915633797,
+        "B_variance_written": 0.14425176369959497,
+        "B_current_output_sham": 0.8332743819375981,
+        "B_current_output_written": 0.8303727884458914,
+        "B_history_l2": 0.05110499384536602,
+        "C_current_output_sham": 0.8475855860116333,
+        "C_current_output_written": 0.8476860818966329
+      },
+      "natural": {
+        "B_peak_delta": 0.00044818152898584707,
+        "C_peak_delta": 0.00017067870126030726,
+        "C_rms_delta": 2.0180697126481636e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.00039082805995449554,
+        "C_peak_delta": 2.4369135695700983e-05,
+        "C_rms_delta": 2.7332908476170954e-06,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 2.987408698551519e-05,
+        "C_probe_interaction_peak": 5.504951289814208e-06,
+        "C_probe_interaction_rms": 7.599099118458049e-07,
+        "B_probe_interaction_peak": 8.806901721913896e-05,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 5
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.14892915061644443,
+        "B_variance_written": 0.14859174387141472,
+        "B_current_output_sham": 0.8471451475661254,
+        "B_current_output_written": 0.8445733804319944,
+        "B_history_l2": 0.051567926979330395,
+        "C_current_output_sham": 0.8452855359065214,
+        "C_current_output_written": 0.8454042838559936
+      },
+      "natural": {
+        "B_peak_delta": 0.00017443747244616503,
+        "C_peak_delta": 0.00015021254561808917,
+        "C_rms_delta": 1.9795475465071953e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 7.32494900652636e-05,
+        "C_peak_delta": 1.1984721303814894e-05,
+        "C_rms_delta": 1.3399782737361326e-06,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 2.315681803932712e-05,
+        "C_probe_interaction_peak": 1.1172096735512227e-05,
+        "C_probe_interaction_rms": 1.2490786823322948e-06,
+        "B_probe_interaction_peak": 7.373379763264687e-05,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 6
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.13275972160407812,
+        "B_variance_written": 0.1327911338349984,
+        "B_current_output_sham": 0.8456392940008903,
+        "B_current_output_written": 0.8456392940008903,
+        "B_history_l2": 0.045757453799528655,
+        "C_current_output_sham": 0.830698284561726,
+        "C_current_output_written": 0.8307491363781525
+      },
+      "natural": {
+        "B_peak_delta": 0.0004267704820597462,
+        "C_peak_delta": 7.542848215025266e-06,
+        "C_rms_delta": 1.0309798376976968e-06
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.00036890077446827263,
+        "C_peak_delta": 4.6922864753717874e-06,
+        "C_rms_delta": 7.232881968594563e-07,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 5.290688526615739e-06,
+        "C_probe_interaction_peak": 6.309894651224113e-07,
+        "C_probe_interaction_rms": 9.722842253390118e-08,
+        "B_probe_interaction_peak": 5.7869707591473585e-05,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 7
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.15133631264614741,
+        "B_variance_written": 0.15146380079148228,
+        "B_current_output_sham": 0.8162094418511606,
+        "B_current_output_written": 0.812898788653068,
+        "B_history_l2": 0.05080100156259601,
+        "C_current_output_sham": 0.8471122719246134,
+        "C_current_output_written": 0.847202506489477
+      },
+      "natural": {
+        "B_peak_delta": 0.0012276529165156091,
+        "C_peak_delta": 0.00019529528285466835,
+        "C_rms_delta": 2.361038809282392e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.001050435117943227,
+        "C_peak_delta": 6.47687950035003e-05,
+        "C_rms_delta": 7.339747981552608e-06,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 7.121738155591029e-05,
+        "C_probe_interaction_peak": 1.7804925974362895e-05,
+        "C_probe_interaction_rms": 2.1172089035489045e-06,
+        "B_probe_interaction_peak": 0.00011352885255755396,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    },
+    {
+      "input": {
+        "initial": 0.6,
+        "pulse_amp": 0.5,
+        "warm": 140,
+        "duration": 12,
+        "hold": 8,
+        "probe": 0.15,
+        "steps": 80,
+        "dim": 256,
+        "gain": 0.2,
+        "noise": 0.003,
+        "seed": 8
+      },
+      "at_checkpoint": {
+        "B_variance_sham": 0.15226749335584128,
+        "B_variance_written": 0.15229308206696657,
+        "B_current_output_sham": 0.8138730597878471,
+        "B_current_output_written": 0.8115023183481607,
+        "B_history_l2": 0.045971716521306286,
+        "C_current_output_sham": 0.8476560584764797,
+        "C_current_output_written": 0.8477104358090682
+      },
+      "natural": {
+        "B_peak_delta": 0.0008643078584348318,
+        "C_peak_delta": 0.00014022439151417654,
+        "C_rms_delta": 1.69333617634873e-05
+      },
+      "memory_graft": {
+        "B_peak_delta": 0.00017987105495897993,
+        "C_peak_delta": 5.132670323093613e-06,
+        "C_rms_delta": 5.73869915622755e-07,
+        "C_no_BC_peak_delta": 0.0,
+        "C_no_probe_peak_delta": 4.9722874773894254e-05,
+        "C_probe_interaction_peak": 4.9722874773894254e-05,
+        "C_probe_interaction_rms": 5.5894303008005025e-06,
+        "B_probe_interaction_peak": 0.0008023338073805952,
+        "B_first_delta": 0.0,
+        "C_first_delta": 0.0,
+        "C_last_delta": 0.0
+      }
+    }
+  ],
+  "baseline": {
+    "input": {
+      "initial": 0.6,
+      "pulse_amp": 0.5,
+      "warm": 140,
+      "duration": 12,
+      "hold": 8,
+      "probe": 0.15,
+      "steps": 80,
+      "dim": 256,
+      "gain": 0.2,
+      "noise": 0.0,
+      "seed": 42
+    },
+    "at_checkpoint": {
+      "B_variance_sham": 0.13921768259351172,
+      "B_variance_written": 0.13964210046988118,
+      "B_current_output_sham": 0.816155715879329,
+      "B_current_output_written": 0.8112093868748536,
+      "B_history_l2": 0.07057493954429032,
+      "C_current_output_sham": 0.8603801630491443,
+      "C_current_output_written": 0.8605287801148317
+    },
+    "natural": {
+      "B_peak_delta": 0.0023150450928304256,
+      "C_peak_delta": 0.0003276131784419878,
+      "C_rms_delta": 4.712355486391372e-05
+    },
+    "memory_graft": {
+      "B_peak_delta": 1.234015830690753,
+      "C_peak_delta": 0.6668331514965933,
+      "C_rms_delta": 0.09692249823259788,
+      "C_no_BC_peak_delta": 0.0,
+      "C_no_probe_peak_delta": 0.00013532242330294153,
+      "C_probe_interaction_peak": 0.6668331514965933,
+      "C_probe_interaction_rms": 0.09692191830217539,
+      "B_probe_interaction_peak": 1.234015830690753,
+      "B_first_delta": 0.0,
+      "C_first_delta": 0.0,
+      "C_last_delta": -0.06971958301476722
+    }
+  }
+}
