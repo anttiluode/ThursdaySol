@@ -1,6 +1,6 @@
 """Run: python -m pytest -q experiments/physical_return/test_assay.py"""
 import numpy as np
-from .assay import prepare, trial, variant, wrap
+from experiments.physical_return.assay import prepare, trial, variant, wrap
 
 def test_kick_reaches_neighbors_only_through_A_emission():
     written,control=prepare(seed=1,kick=.6,hold=800)
