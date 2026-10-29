@@ -68,3 +68,20 @@ The original ECG-variance assay above remains unchanged and its negative noise r
 python -m experiments.slow_state_relay
 python -m pytest -q test_three_loop.py experiments/test_slow_state_relay.py
 ~~~
+
+
+## Experiment 7: always-connected adaptive chain
+
+[Read Experiment 7 results, controls and limits](experiments/CONTINUOUS_RESULTS.md).
+[Model](experiments/continuous_adaptive.py) · [Tests](experiments/test_continuous_adaptive.py) · [160-seed-per-sign noise-sweep receipt](experiments/results/continuous_adaptive_summary.csv).
+
+Unlike Experiment 6, both A→B and B→C remain active throughout the normal warm-up, write and hold periods. An engineered local homeostat adjusts receiver gain using only the receiver's own memory activity. A second, explicitly **diagnostic** readout isolates C for one tick after propagation so its persistent local state can be distinguished from B's ongoing transmission.
+
+At noise SD 0.003, held-out isolated C-output decoding was 100% for **both** adaptive and fixed gain. Knocking out B memory, removing B→C, or erasing C memory before local readout returned decoding to roughly chance. At noise SD 0.03: adaptive 90.6%, fixed 92.5%. At SD 0.1: adaptive 70%, fixed 65%; however decoding the *change caused by the probe* was only 55.6%. Thus the successful state relay **does not establish that adaptation was required or consistently beneficial**.
+
+Reproduce from repository root:
+
+~~~bash
+python -m experiments.continuous_adaptive --seeds 160
+python -m pytest -q test_three_loop.py experiments/test_slow_state_relay.py experiments/test_continuous_adaptive.py
+~~~
