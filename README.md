@@ -99,3 +99,15 @@ However, held-out independent-noise decoding from C's **probe increment** recove
 python -m experiments.pulse_history --length 2 --per-word 80
 python -m pytest -q experiments/test_pulse_history.py
 ~~~
+
+
+## Experiment 9: reciprocal physical phase-memory return (first native-field test)
+
+[Report and falsification controls](experiments/physical_return/RESULTS.md) · [Pinned KG+phase equations](experiments/physical_return/physical_subset.py) · [Return-path experiment](experiments/physical_return/assay.py) · [Direct-wave leakage negative](experiments/physical_return/direct_field_leakage.py) · [12-seed measurements](experiments/physical_return/results/native_return_12seeds.csv).
+
+A source-only **phase kick** at A influences B/C through their shared physical wave field. Counterfactually transplanting only B/C's difference-phase state D, while matching A, the entire field and B/C's sum phases, changes A's later probe response. With B/C emissions blocked in both readout arms, the difference is exactly zero. But the signed effect changes direction across preparations and its 12-seed mean CI spans zero. **The isotropic reciprocal field does not demonstrate an ordered A→B→C→A relay.** An earlier external-field write failed the direct-leakage control (B/C still changed with A's emission switched off). No artificial memory register was added; the code is a **NumPy pinned-pair subset** of the original Torch phase/Klein–Gordon equations, not a direct original-World run.
+
+~~~bash
+python -m experiments.physical_return.assay --seeds 12
+python -m pytest -q experiments/physical_return/test_assay.py
+~~~
