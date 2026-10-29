@@ -85,3 +85,17 @@ Reproduce from repository root:
 python -m experiments.continuous_adaptive --seeds 160
 python -m pytest -q test_three_loop.py experiments/test_slow_state_relay.py experiments/test_continuous_adaptive.py
 ~~~
+
+
+## Experiment 8: multiple pulses and conditional next-response
+
+[Full protocol and results](experiments/PULSE_HISTORY_RESULTS.md) · [Reproducible code](experiments/pulse_history.py) · [14 new tests](experiments/test_pulse_history.py) · [JSON receipt](experiments/results/pulse_history_summary.json).
+
+**A causal yes, and an information-capacity no.** With A→B→C connected throughout input and propagation, two earlier pulse histories (−,+) and (+,+) make C respond differently to the *same subsequent + probe*. At noise SD 0.003 the matched-noise, 120-pair difference in probe increment is −0.00514 (95% normal-approximation interval −0.00553 to −0.00475). Erase B, erase C, cut B→C, or omit the earlier pulse and the paired difference vanishes.
+
+However, held-out independent-noise decoding from C's **probe increment** recovered the first of two pulses at 81.25%, the second at only 56.25%, and the full word at 40% (chance 25%). At noise SD 0.03 even that early-pulse decoding was near chance. A three-pulse word decoded at only 20% (chance 12.5%). The local adaptive homeostat is **not required**: fixed gain also produces the effect. These are engineered leaky-memory dynamics, not emergent neuronal physics. Readout isolation is a one-step *diagnostic*, not a staged transfer.
+
+~~~bash
+python -m experiments.pulse_history --length 2 --per-word 80
+python -m pytest -q experiments/test_pulse_history.py
+~~~
